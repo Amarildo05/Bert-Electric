@@ -1,4 +1,3 @@
-import React from "react";
 import { Menubar } from "primereact/menubar";
 import { useNavigate } from "react-router-dom";
 
@@ -13,17 +12,17 @@ export default function BasicDemo() {
     },
     {
       label: "Rreth Nesh",
-      icon: "pi pi-info-circle",
+      icon: "pi pi-users",
       command: () => navigate("/rreth-nesh"),
     },
     {
       label: "Shërbimet",
-      icon: "pi pi-cogs",
+      icon: "pi pi-briefcase",
       command: () => navigate("/sherbimet"),
     },
     {
       label: "Produktet",
-      icon: "pi pi-box",
+      icon: "pi pi-shopping-bag",
       command: () => navigate("/produkte"),
     },
     {
