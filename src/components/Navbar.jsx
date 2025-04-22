@@ -23,7 +23,7 @@ export default function BasicDemo() {
     {
       label: "Produktet",
       icon: "pi pi-shopping-bag",
-      command: () => navigate("/produkte"),
+      command: () => navigate("/produktet"),
     },
     {
       label: "Na Kontakto",
@@ -34,7 +34,17 @@ export default function BasicDemo() {
 
   return (
     <div className="card">
-      <Menubar model={items} />
+      <Menubar
+        model={items}
+        start={
+          <img
+            src="/BertElectric-Logo.png"
+            alt="Bert Electric Logo"
+            className="w-14 h-14 rounded-full ml-6"
+          />
+        }
+        className="justify-around gap-96"
+      />
     </div>
   );
 }

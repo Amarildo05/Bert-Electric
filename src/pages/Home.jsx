@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="text-4xl text-blue-600 font-bold p-4">
+    <div className="text-3xl font-bold underline text-amber-500">
       Hyrje
     </div>
   );
