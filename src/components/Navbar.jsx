@@ -1,8 +1,10 @@
 import { useLocation, useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 export default function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
     { label: "Hyrje", path: "/" },
@@ -23,12 +25,42 @@ export default function Navbar() {
           <img
             src="/BertElectric-Logo.png"
             alt="Bert Electric Logo"
-            className="w-18 h-18 rounded-full"
+            className="w-14 h-14 rounded-full"
           />
         </div>
 
-        {/* Nav Items */}
-        <ul className="flex gap-3 uppercase">
+        {/* Hamburger Icon for Mobile */}
+        <div
+          className="md:hidden cursor-pointer"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8 text-white"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            {menuOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
+        </div>
+
+        {/* Desktop Nav */}
+        <ul className="hidden md:flex gap-3 uppercase">
           {navItems.map((item) => (
             <li
               key={item.path}
@@ -44,6 +76,28 @@ export default function Navbar() {
           ))}
         </ul>
       </div>
+
+      {/* Mobile Menu */}
+      {menuOpen && (
+        <ul className="md:hidden flex flex-col gap-2 mt-2 uppercase bg-[#14128f] p-4 rounded-lg shadow-md">
+          {navItems.map((item) => (
+            <li
+              key={item.path}
+              onClick={() => {
+                navigate(item.path);
+                setMenuOpen(false); // Close menu after click
+              }}
+              className={`cursor-pointer px-4 py-2 rounded-lg transition-all duration-300 relative ${
+                location.pathname === item.path
+                  ? "bg-[#d1d5db] text-[#14128f]"
+                  : "hover:bg-[#d1d5db] hover:text-[#14128f]"
+              }`}
+            >
+              {item.label}
+            </li>
+          ))}
+        </ul>
+      )}
     </nav>
   );
 }

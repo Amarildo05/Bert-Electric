@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pr-10">
         <div className="text-center md:text-left">
           <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
-            BERT <span className="text-blue-500">ELECTRIC</span>
+            BERT <span className="text-blue-800">ELECTRIC</span>
           </h2>
           <p className="max-w-md mx-auto mt-3 text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
             Ekspertë në instalime elektrike, kamera monitorimi dhe sisteme
@@ -19,7 +19,7 @@ export default function Hero() {
           <div className="mt-5 md:mt-8">
             <Link
               to="/sherbimet"
-              className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white transition duration-150 ease-in-out bg-blue-500 rounded-md hover:bg-blue-600 md:py-4 md:text-lg md:px-10 shadow"
+              className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white transition duration-150 ease-in-out bg-blue-800 rounded-md hover:bg-blue-700 md:py-4 md:text-lg md:px-10 shadow"
             >
               Shiko më shumë...
             </Link>
