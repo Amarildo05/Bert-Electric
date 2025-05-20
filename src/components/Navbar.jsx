@@ -25,7 +25,7 @@ export default function Navbar() {
           <img
             src="/BertElectric-Logo.png"
             alt="Bert Electric Logo"
-            className="w-14 h-14 rounded-full"
+            className="w-17 h-16 rounded-full"
           />
         </div>
 
