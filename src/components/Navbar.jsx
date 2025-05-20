@@ -79,7 +79,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul className="md:hidden flex flex-col gap-2 mt-2 uppercase bg-[#14128f] p-4 rounded-lg shadow-md">
+        <ul className="md:hidden flex flex-col items-center gap-2 mt-2 uppercase p-4">
           {navItems.map((item) => (
             <li
               key={item.path}
@@ -87,7 +87,7 @@ export default function Navbar() {
                 navigate(item.path);
                 setMenuOpen(false); // Close menu after click
               }}
-              className={`cursor-pointer px-4 py-2 rounded-lg transition-all duration-300 relative ${
+              className={`cursor-pointer w-2/3 px-4 py-2 text-center rounded-lg transition-all duration-300 ${
                 location.pathname === item.path
                   ? "bg-[#d1d5db] text-[#14128f]"
                   : "hover:bg-[#d1d5db] hover:text-[#14128f]"
