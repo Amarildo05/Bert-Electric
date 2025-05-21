@@ -33,7 +33,7 @@ export default function Hero() {
         <div className="relative w-full p-3 rounded md:p-8">
           <div className="rounded-lg bg-white text-black w-full">
             <img
-              src="./hero2.jpeg"
+              src="./Hero.jpeg"
               alt="Bert Electric"
               className="w-full h-full rounded-lg"
             />

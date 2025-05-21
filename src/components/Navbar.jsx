@@ -60,7 +60,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop Nav */}
-        <ul className="hidden md:flex gap-3 uppercase">
+        <ul className="hidden md:flex gap-3">
           {navItems.map((item) => (
             <li
               key={item.path}
@@ -79,7 +79,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul className="md:hidden flex flex-col items-center gap-2 mt-2 uppercase p-4">
+        <ul className="md:hidden flex flex-col items-center gap-2 mt-2  p-4">
           {navItems.map((item) => (
             <li
               key={item.path}
