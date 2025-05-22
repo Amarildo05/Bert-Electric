@@ -23,7 +23,7 @@ const products = [
 
 export default function ProductHighlights() {
   return (
-    <section className="py-12 px-6">
+    <section className="py-16 px-8 mb-4">
       <div className="max-w-6xl mx-auto text-center mb-10">
         <h2 className="text-3xl font-bold text-gray-800">Produktet Kryesore</h2>
         <p className="text-gray-600 mt-2">
@@ -61,7 +61,7 @@ export default function ProductHighlights() {
               <p className="text-sm text-gray-600 mt-1 mb-4">{item.subtitle}</p>
               <Link
                 to="/produktet"
-                className="inline-block px-4 py-2 text-sm text-white bg-blue-800 rounded hover:bg-blue-700 transition"
+                className="inline-block px-4 py-2 text-sm text-white bg-blue-800 rounded hover:bg-blue-700 transition hover:scale-106"
               >
                 Shiko më shumë
               </Link>
