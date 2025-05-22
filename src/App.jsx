@@ -5,6 +5,7 @@ import Services from "./pages/Services";
 import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/produktet" element={<Products />} />
         <Route path="/kontakt" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
