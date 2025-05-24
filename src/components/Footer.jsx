@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-r from-[#14128f] via-[#413db6] to-[#14128f] text-[#f4f5fd] py-6 px-4">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 text-sm text-[#f4f5fd]">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 lg:gap-28 text-sm text-[#f4f5fd]">
         {/* Logo (Clickable) */}
         <div className="flex flex-col items-center text-center">
           <Link to="/" className="hover:scale-110 transition">
@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
 
         {/* Contact Info */}
-        <div className="flex flex-col items-center text-center sm:items-start gap-3">
+        <div className="flex flex-col items-center text-center sm:items-start justify-center gap-3">
           <a
             href="tel:0695660789"
             className="flex items-center gap-2 hover:scale-106 transition"
@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
 
         {/* Social Media */}
-        <div className="flex flex-col items-center text-center sm:items-start gap-3">
+        <div className="flex flex-col items-center text-center sm:items-start justify-center gap-3">
           <a
             href="https://instagram.com/bert_electric1"
             target="_blank"

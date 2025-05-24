@@ -51,7 +51,7 @@ export default function ServicesPreview() {
               <h3 className="text-lg font-semibold text-gray-800 mb-2">
                 {service.title}
               </h3>
-              <p className="text-sm text-gray-600">{service.description}</p>
+              <p className="text-sm text-gray-500">{service.description}</p>
             </Link>
           ))}
         </div>

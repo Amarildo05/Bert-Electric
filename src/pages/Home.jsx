@@ -1,12 +1,12 @@
 import ContactCTA from "../components/homePage/ContactCTA";
-import Hero from "../components/homePage/Hero";
+import HomepageHero from "../components/homePage/HomepageHero";
 import ProductHighlights from "../components/homePage/ProductHighlights";
 import ServicesPreview from "../components/homePage/ServicesPreview";
 
 export default function Home() {
   return (
     <>
-      <Hero />
+      <HomepageHero />
       <ServicesPreview />
       <ProductHighlights />
       <ContactCTA />

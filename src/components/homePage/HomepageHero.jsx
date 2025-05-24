@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Hero() {
+export default function HomepageHero() {
   return (
     <div className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-4">
       {/* Text Section */}

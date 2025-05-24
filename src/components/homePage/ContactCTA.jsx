@@ -9,7 +9,7 @@ export default function ContactCTA() {
           <h2 className="text-2xl font-bold text-gray-800">
             Keni nevojë për ndihmë apo informacion?
           </h2>
-          <p className="text-gray-600 mt-2">
+          <p className="text-gray-500 mt-2">
             Jemi gjithmonë të gatshëm t’ju ndihmojmë. Mund të na telefononi ose
             të na shkruani në WhatsApp.
           </p>
