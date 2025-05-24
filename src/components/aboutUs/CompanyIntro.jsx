@@ -1,6 +1,6 @@
 export default function CompanyIntro() {
   return (
-    <section className="max-w-4xl mx-auto mb-20 leading-relaxed text-lg text-gray-500 bg-gray-100">
+    <section className="py-16 px-8 md:px-p[10%] lg:px-[20%] text-center md:text-left mb-20 leading-relaxed text-lg text-gray-500 bg-gray-100">
       <p className="mb-4">
         Në Bert Electric, ofrojmë shërbime profesionale dhe të besueshme në
         fushën e instalimeve elektrike, sistemet e kamerave të monitorimit,

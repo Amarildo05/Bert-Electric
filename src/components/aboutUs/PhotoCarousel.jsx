@@ -5,7 +5,6 @@ const carouselImages = [
   "/photos/tools.jpg",
   "/photos/vehicle.jpg",
   "/photos/onsite1.jpg",
-  // add your images here
 ];
 
 export default function PhotoCarousel() {

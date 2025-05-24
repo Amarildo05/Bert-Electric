@@ -4,7 +4,7 @@ export default function WhyChooseUs() {
       <h2 className="text-3xl font-semibold mb-6 text-center text-gray-800">
         Pse të na zgjidhni ne?
       </h2>
-      <ul className="space-y-4 text-lg leading-relaxed text-gray-500">
+      <ul className="space-y-4 text-lg ps-5 px-6 text-c leading-relaxed text-gray-500">
         <li>
           ✔️ Me vite përvoje në projekte të ndryshme, kemi ndërtuar besimin dhe
           reputacionin tonë tek mijëra klientë.
