@@ -33,9 +33,10 @@ export default function ProductHighlights() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-6 sm:mx-auto">
         {products.map((item, index) => (
-          <div
+          <Link
+            to="/produktet"
             key={index}
-            className="bg-gray-100 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300"
+            className="block bg-gray-100 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:bg-gray-50"
           >
             <div className="flex items-center justify-between px-16 sm:px-4 md:px-7 p-3">
               <img
@@ -59,14 +60,11 @@ export default function ProductHighlights() {
                 {item.brand}
               </h3>
               <p className="text-sm text-gray-500 mt-1 mb-4">{item.subtitle}</p>
-              <Link
-                to="/produktet"
-                className="inline-block px-4 py-2 text-sm text-white bg-blue-800 rounded hover:bg-blue-700 transition hover:scale-106"
-              >
+              <span className="inline-block px-4 py-2 text-sm text-white bg-blue-800 rounded hover:bg-blue-700 transition hover:scale-106">
                 Shiko më shumë
-              </Link>
+              </span>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

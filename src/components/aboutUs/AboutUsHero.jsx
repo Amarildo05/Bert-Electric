@@ -11,10 +11,10 @@ export default function AboutUsHero() {
         }}
       />
 
-      <h1 className="relative text-5xl font-extrabold z-10 drop-shadow-lg text-gray-800">
+      <h1 className="relative text-5xl font-extrabold z-10 text-blue-800 drop-shadow-[0_1px_5px_rgba(0,0,0,0.25)] lg:-top-8">
         Kush Jemi Ne
       </h1>
-      <p className="relative mt-4 max-w-xl text-lg z-10 drop-shadow text-gray-500">
+      <p className="relative mt-4 max-w-xl text-lg lg:text-xl z-10 text-gray-500 drop-shadow-[0_1px_4px_rgba(0,0,0,0.25)] lg:-top-8">
         Ekspertë në instalime elektrike, kamera monitorimi, sisteme sigurie dhe
         sisteme audio.
       </p>
