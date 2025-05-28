@@ -7,11 +7,11 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const navItems = [
-    { label: "Hyrje", path: "/" },
-    { label: "Rreth Nesh", path: "/rreth-nesh" },
-    { label: "Shërbimet", path: "/sherbimet" },
-    { label: "Produktet", path: "/produktet" },
-    { label: "Na Kontakto", path: "/kontakt" },
+    { label: "Hyrje", path: "/", icon: "pi-home" },
+    { label: "Rreth Nesh", path: "/rreth-nesh", icon: "pi-users" },
+    { label: "Shërbimet", path: "/sherbimet", icon: "pi-cog" },
+    { label: "Produktet", path: "/produktet", icon: "pi-tags" },
+    { label: "Na Kontakto", path: "/kontakt", icon: "pi-envelope" },
   ];
 
   return (
@@ -61,41 +61,67 @@ export default function Navbar() {
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex gap-3">
-          {navItems.map((item) => (
-            <li
-              key={item.path}
-              onClick={() => navigate(item.path)}
-              className={`cursor-pointer px-4 py-2 rounded-lg transition-all duration-300 relative ${
-                location.pathname === item.path
-                  ? "bg-[#d1d5db] text-[#14128f] hover:scale-110 hover:shadow-xl"
-                  : "hover:bg-[#d1d5db] hover:text-[#14128f] hover:scale-110 hover:shadow-xl"
-              }`}
-            >
-              {item.label}
-            </li>
-          ))}
+          {navItems.map((item) => {
+            const isActive = location.pathname === item.path;
+
+            return (
+              <li
+                key={item.path}
+                onClick={() => navigate(item.path)}
+                className={`group cursor-pointer px-4 py-2 rounded-lg flex items-center gap-2 transition-all duration-300 ${
+                  isActive
+                    ? "bg-[#d1d5db] text-[#14128f] hover:scale-110 hover:shadow-xl"
+                    : "hover:bg-[#d1d5db] hover:text-[#14128f] hover:scale-110 hover:shadow-xl"
+                }`}
+              >
+                <i
+                  className={`pi ${
+                    item.icon
+                  } text-lg transition-colors duration-300 ${
+                    isActive
+                      ? "text-blue-900"
+                      : "text-white group-hover:text-[#14128f]"
+                  }`}
+                />
+                {item.label}
+              </li>
+            );
+          })}
         </ul>
       </div>
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul className="md:hidden flex flex-col items-center gap-2 mt-2  p-4">
-          {navItems.map((item) => (
-            <li
-              key={item.path}
-              onClick={() => {
-                navigate(item.path);
-                setMenuOpen(false); // Close menu after click
-              }}
-              className={`cursor-pointer w-2/3 px-4 py-2 text-center rounded-lg transition-all duration-300 ${
-                location.pathname === item.path
-                  ? "bg-[#d1d5db] text-[#14128f]"
-                  : "hover:bg-[#d1d5db] hover:text-[#14128f]"
-              }`}
-            >
-              {item.label}
-            </li>
-          ))}
+        <ul className="md:hidden flex flex-col items-center gap-2 mt-2 p-4">
+          {navItems.map((item) => {
+            const isActive = location.pathname === item.path;
+
+            return (
+              <li
+                key={item.path}
+                onClick={() => {
+                  navigate(item.path);
+                  setMenuOpen(false); // Close Menu after navigating to another page
+                }}
+                className={`group cursor-pointer w-2/3 px-4 py-2 text-center flex items-center justify-center gap-2 rounded-lg transition-all duration-300 ${
+                  isActive
+                    ? "bg-[#d1d5db] text-[#14128f]"
+                    : "hover:bg-[#d1d5db] hover:text-[#14128f]"
+                }`}
+              >
+                <i
+                  className={`pi ${
+                    item.icon
+                  } text-lg transition-colors duration-300 ${
+                    isActive
+                      ? "text-blue-900"
+                      : "text-white group-hover:text-[#14128f]"
+                  }`}
+                />
+                {item.label}
+              </li>
+            );
+          })}
         </ul>
       )}
     </nav>
