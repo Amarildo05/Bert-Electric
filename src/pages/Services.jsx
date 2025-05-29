@@ -7,7 +7,7 @@ const services = [
     description:
       "Projektim dhe zbatim të kabinave elektrike, instalimeve shtëpiake dhe industriale.",
     icon: "pi pi-bolt",
-    image: "/electrical-installation.jpg",
+    image: "/ServicesPage/Electrical-Instalation.jpg",
     link: "/sherbimet/instalime-elektrike",
   },
   {
@@ -15,7 +15,7 @@ const services = [
     description:
       "Instalim profesional i kamerave për shtëpi, biznese dhe hapësira publike.",
     icon: "pi pi-video",
-    image: "/cameras.avif",
+    image: "/ServicesPage/Security-Cameras.png",
     link: "/sherbimet/kamera",
   },
   {
@@ -23,7 +23,7 @@ const services = [
     description:
       "Sisteme alarmi kundër vjedhjes dhe zjarrit për siguri maksimale.",
     icon: "pi pi-shield",
-    image: "/alarm.jpg",
+    image: "/ServicesPage/Alarm-Systems.jpg",
     link: "/sherbimet/alarmi",
   },
   {
@@ -31,23 +31,22 @@ const services = [
     description:
       "Zgjidhje për audio të brendshme, njoftime publike dhe sisteme zëri.",
     icon: "pi pi-volume-up",
-    image: "/audio.webp",
+    image: "/ServicesPage/Audio-Systems.jpg",
     link: "/sherbimet/audio",
   },
 ];
 
 export default function Services() {
   return (
-    <section className="min-h-screen py-16 sm:py-24 px-6">
-      <div className="max-w-7xl mx-auto">
-        <ServicesHero />
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-10 sm:px-20 md:px-0">
+    <>
+      <ServicesHero />
+      <section className="min-h-screen py-16 sm:py-16 px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-6 sm:px-20 md:px-0">
           {services.map((service, i) => (
             <ServiceCard key={i} {...service} />
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 }

@@ -31,7 +31,7 @@ export default function HomepageHero() {
         <div className="relative w-full p-3 rounded md:p-8">
           <div className="rounded-lg bg-white text-black w-full">
             <img
-              src="./Homepage/Hero.jpeg"
+              src="./Homepage/HomeHero.jpeg"
               alt="Bert Electric"
               className="w-full h-full rounded-lg"
             />

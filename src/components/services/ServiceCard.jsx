@@ -6,7 +6,7 @@ export default function ServiceCard({ title, description, icon, image, link }) {
       to={link}
       className="bg-gray-100 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 hover:-translate-y-1 flex flex-col lg:flex-row cursor-pointer"
     >
-      <div className="w-full lg:w-1/2 h-56 lg:h-auto overflow-hidden">
+      <div className="w-full lg:w-1/2 h-full lg:h-auto overflow-hidden">
         <img
           src={image}
           alt={title}
@@ -14,7 +14,7 @@ export default function ServiceCard({ title, description, icon, image, link }) {
         />
       </div>
 
-      <div className="p-8 flex flex-col text-center justify-center w-full lg:w-1/2">
+      <div className="p-6 sm:p-8 flex flex-col text-center justify-center w-full lg:w-1/2">
         <i
           style={{ fontSize: "1.5rem" }}
           className={`${icon} text-blue-800 mb-4`}
