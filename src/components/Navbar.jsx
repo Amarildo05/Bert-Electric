@@ -10,8 +10,8 @@ export default function Navbar() {
     { label: "Hyrje", path: "/", icon: "pi-home" },
     { label: "Rreth Nesh", path: "/rreth-nesh", icon: "pi-users" },
     { label: "Shërbimet", path: "/sherbimet", icon: "pi-cog" },
-    { label: "Produktet", path: "/produktet", icon: "pi-tags" },
-    { label: "Na Kontakto", path: "/kontakt", icon: "pi-envelope" },
+    { label: "Produktet", path: "/produktet", icon: "pi-box" },
+    { label: "Na Kontakto", path: "/kontakt", icon: "pi-phone" },
   ];
 
   return (

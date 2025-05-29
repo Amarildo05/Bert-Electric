@@ -4,9 +4,9 @@ export default function ServiceCard({ title, description, icon, image, link }) {
   return (
     <Link
       to={link}
-      className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 hover:-translate-y-1 flex flex-col md:flex-row cursor-pointer"
+      className="bg-gray-100 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 hover:-translate-y-1 flex flex-col lg:flex-row cursor-pointer"
     >
-      <div className="md:w-1/2 h-56 md:h-auto overflow-hidden">
+      <div className="w-full lg:w-1/2 h-56 lg:h-auto overflow-hidden">
         <img
           src={image}
           alt={title}
@@ -14,8 +14,11 @@ export default function ServiceCard({ title, description, icon, image, link }) {
         />
       </div>
 
-      <div className="p-8 flex flex-col justify-center md:w-1/2">
-        <i className={`${icon} text-5xl text-blue-800 mb-4`}></i>
+      <div className="p-8 flex flex-col text-center justify-center w-full lg:w-1/2">
+        <i
+          style={{ fontSize: "1.5rem" }}
+          className={`${icon} text-blue-800 mb-4`}
+        ></i>
         <h3 className="text-2xl font-semibold text-gray-800 mb-3">{title}</h3>
         <p className="text-gray-600">{description}</p>
       </div>
