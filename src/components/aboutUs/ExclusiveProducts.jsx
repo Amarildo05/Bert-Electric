@@ -17,7 +17,7 @@ export default function ExclusiveProducts() {
   return (
     <section className="py-16 px-8 mb-16 text-center bg-gray-100">
       <h3 className="mb-8 text-base md:text-lg text-gray-500">
-        Ne bashkëpunim me markat më të mira
+        Ne bashkëpunim me markat më të mira në treg
       </h3>
       <div className="flex justify-center flex-wrap items-center gap-8">
         {logos.map((logo, i) => (

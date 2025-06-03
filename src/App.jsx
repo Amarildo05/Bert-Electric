@@ -6,6 +6,7 @@ import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ServicesDetails from "./pages/ServicesDetails";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/sherbimet" element={<Services />} />
         <Route path="/produktet" element={<Products />} />
         <Route path="/kontakt" element={<Contact />} />
+        <Route path="/sherbimet/:slug" element={<ServicesDetails />} />
       </Routes>
       <Footer />
     </Router>
