@@ -1,33 +1,19 @@
 import { Carousel } from "primereact/carousel";
 
-const carouselImages = [
-  "/Store/Store1.jpg",
-  "/Store/Store2.jpg",
-  "/Store/Store3.jpg",
-  "/Store/Store4.jpg",
-  "/Store/Store5.jpg",
-  "/Store/Store6.jpg",
-  "/Store/Store7.jpg",
-  "/Store/Store8.jpg",
-  "/Store/Store9.jpg",
-  "/Store/Store10.jpg",
-  "/Store/Store11.jpg",
-];
-
-export default function PhotoCarousel() {
+export default function PhotoCarousel({ images }) {
   const carouselItemTemplate = (image) => (
     <img
       src={image}
-      alt="Store photo"
+      alt="Carousel photo"
       className="w-full h-full object-cover p-3.5"
       loading="lazy"
     />
   );
 
   return (
-    <section className="max-w-6xl mx-auto mb-20">
+    <section className="max-w-6xl mx-auto mb-12">
       <Carousel
-        value={carouselImages}
+        value={images}
         itemTemplate={carouselItemTemplate}
         numVisible={3}
         numScroll={1}

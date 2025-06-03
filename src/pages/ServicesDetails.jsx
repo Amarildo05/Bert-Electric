@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import PhotoCarousel from "../components/PhotoCarousel";
 
 const services = [
   {
@@ -10,9 +11,25 @@ const services = [
       "Zbatim sipas standardeve të BE-së",
       "Materiale të çertifikuara",
       "Mbështetje teknike pas instalimit",
-      "Kosto transparente dhe pa surpriza",
+      "Kosto transparente dhe të arsyeshme",
     ],
-    image: "/ServicesPage/electrical-installation.jpg",
+    images: [
+      "/ServicesPage/ServicesDetails/InstalimeElektrike/InstalimeElektrike1.jpg",
+      "/ServicesPage/ServicesDetails/InstalimeElektrike/InstalimeElektrike2.jpg",
+      "/ServicesPage/ServicesDetails/InstalimeElektrike/InstalimeElektrike3.jpg",
+      "/ServicesPage/ServicesDetails/InstalimeElektrike/InstalimeElektrike4.jpg",
+      "/ServicesPage/ServicesDetails/InstalimeElektrike/InstalimeElektrike5.jpg",
+      "/ServicesPage/ServicesDetails/InstalimeElektrike/InstalimeElektrike6.jpg",
+      "/ServicesPage/ServicesDetails/InstalimeElektrike/InstalimeElektrike7.jpg",
+      "/ServicesPage/ServicesDetails/InstalimeElektrike/InstalimeElektrike8.jpg",
+      "/ServicesPage/ServicesDetails/InstalimeElektrike/InstalimeElektrike9.jpg",
+      "/ServicesPage/ServicesDetails/InstalimeElektrike/InstalimeElektrike10.jpg",
+      "/ServicesPage/ServicesDetails/InstalimeElektrike/InstalimeElektrike11.jpg",
+      "/ServicesPage/ServicesDetails/InstalimeElektrike/InstalimeElektrike12.jpg",
+      "/ServicesPage/ServicesDetails/InstalimeElektrike/InstalimeElektrike13.jpg",
+      "/ServicesPage/ServicesDetails/InstalimeElektrike/InstalimeElektrike14.jpg",
+      "/ServicesPage/ServicesDetails/InstalimeElektrike/InstalimeElektrike15.jpg",
+    ],
   },
   {
     title: "Sisteme Monitorimi/Kamera",
@@ -25,7 +42,27 @@ const services = [
       "Regjistrues DVR/NVR dhe ruajtje në cloud",
       "Integrim me sisteme alarmi dhe audio",
     ],
-    image: "/ServicesPage/Security-Cameras.png",
+    images: [
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi1.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi2.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi3.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi4.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi5.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi6.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi7.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi8.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi9.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi10.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi11.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi12.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi13.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi14.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi15.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi16.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi17.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi18.jpg",
+      "/ServicesPage/ServicesDetails/SistemeMonitorimi/SistemeMonitorimi19.jpg",
+    ],
   },
   {
     title: "Sisteme Alarmi",
@@ -38,7 +75,16 @@ const services = [
       "Pajisje me teknologji të fundit",
       "Instalim profesional dhe garanci",
     ],
-    image: "/ServicesPage/alarm.jpg",
+    images: [
+      "/ServicesPage/ServicesDetails/SistemeAlarmi/SistemeAlarmi1.jpg",
+      "/ServicesPage/ServicesDetails/SistemeAlarmi/SistemeAlarmi2.jpg",
+      "/ServicesPage/ServicesDetails/SistemeAlarmi/SistemeAlarmi3.jpg",
+      "/ServicesPage/ServicesDetails/SistemeAlarmi/SistemeAlarmi4.jpg",
+      "/ServicesPage/ServicesDetails/SistemeAlarmi/SistemeAlarmi5.jpg",
+      "/ServicesPage/ServicesDetails/SistemeAlarmi/SistemeAlarmi6.jpg",
+      "/ServicesPage/ServicesDetails/SistemeAlarmi/SistemeAlarmi7.jpg",
+      "/ServicesPage/ServicesDetails/SistemeAlarmi/SistemeAlarmi8.jpg",
+    ],
   },
   {
     title: "Sisteme Audio",
@@ -51,7 +97,12 @@ const services = [
       "Altoparlantë për ambiente të jashtme dhe të brendshme",
       "Zgjidhje të personalizuara për nevoja të veçanta",
     ],
-    image: "/ServicesPage/Audio-Systems.jpg",
+    images: [
+      "/ServicesPage/ServicesDetails/SistemeAudio/SistemeAlarmi1.jpg",
+      "/ServicesPage/ServicesDetails/SistemeAudio/SistemeAlarmi2.jpg",
+      "/ServicesPage/ServicesDetails/SistemeAudio/SistemeAlarmi3.jpg",
+      "/ServicesPage/ServicesDetails/SistemeAudio/SistemeAlarmi4.jpg",
+    ],
   },
 ];
 
@@ -62,7 +113,7 @@ export default function ServicesDetails() {
   return (
     <>
       {/* Header */}
-      <section className="relative py-20 text-center">
+      <section className="relative py-18 text-center">
         <h1 className="text-5xl font-extrabold z-10 text-blue-800 drop-shadow-[0_1px_5px_rgba(0,0,0,0.25)] lg:-top-8">
           {service.title}
         </h1>
@@ -71,14 +122,11 @@ export default function ServicesDetails() {
         </p>
       </section>
 
+      {/* Carousel */}
+      {service.images && <PhotoCarousel images={service.images} />}
+
       {/* Main Content */}
       <section className="px-6 max-w-5xl mx-auto">
-        <img
-          src={service.image}
-          alt={service.title}
-          className="rounded-x my-14 shadow-md w-full max-h-[400px] object-cover"
-        />
-
         <h2 className="text-2xl font-semibold text-blue-800 mb-4">
           Përshkrimi i Shërbimit
         </h2>
@@ -103,7 +151,7 @@ export default function ServicesDetails() {
         <div className="text-center my-10">
           <Link
             to="/kontakt"
-            className="inline-block px-6 py-3 bg-blue-800 text-white rounded-xl shadow hover:bg-blue-700 transition"
+            className="inline-block px-6 py-3 text-white transition duration-150 ease-in-out bg-blue-800 rounded-md hover:bg-blue-700 shadow hover:scale-106"
           >
             Na Kontaktoni për më shumë
           </Link>
