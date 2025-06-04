@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ServicesDetails from "./pages/ServicesDetails";
+import BackTop from "./components/BackTop";
 
 export default function App() {
   return (
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/sherbimet/:slug" element={<ServicesDetails />} />
       </Routes>
       <Footer />
+      <BackTop />
     </Router>
   );
 }
