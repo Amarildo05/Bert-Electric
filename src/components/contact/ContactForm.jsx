@@ -8,13 +8,75 @@ export default function ContactForm() {
     message: "",
   });
 
+  // Store validation error messages
+  const [error, setError] = useState("");
+
+  // Store success messages
+  const [success, setSuccess] = useState("");
+
   const handleChange = (e) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e) => {
+  // Validate all fields before submission
+  const validateForm = () => {
+    const { name, email, phone, message } = formData;
+
+    const nameParts = name.trim().split(" ");
+    if (nameParts.length < 2) {
+      setError("Ju lutem shkruani emrin dhe mbiemrin.");
+      return false;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+      setError("Ju lutem vendosni një email të vlefshëm.");
+      return false;
+    }
+
+    const phonePattern = /^[0-9]{6,15}$/;
+    if (!phonePattern.test(phone)) {
+      setError("Vendosni numrin e telefonit në formatin e saktë.");
+      return false;
+    }
+
+    if (message.trim().length === 0) {
+      setError("Ju lutem shkruani mesazhin tuaj.");
+      return false;
+    }
+
+    // If all validations pass, clear errors and return true
+    setError("");
+    return true;
+  };
+
+  // Handle form submission
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert(`Thank you, ${formData.name}! Your message was received.`);
+
+    // Validate form fields before sending
+    if (!validateForm()) return;
+
+    try {
+      // Send form data to third-party service API
+      const response = await fetch(import.meta.env.VITE_FORMSPREE_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Dicka shkoi gabim. Provoni përsëri më vonë.");
+      }
+
+      setSuccess(`Faleminderit, ${formData.name}! Mesazhi juaj u pranua.`);
+      setFormData({ name: "", email: "", phone: "", message: "" });
+
+      setTimeout(() => setSuccess(""), 5000);
+    } catch (err) {
+      setError(err.message || "Dicka shkoi gabim.");
+      setTimeout(() => setError(""), 5000);
+    }
   };
 
   return (
@@ -27,6 +89,18 @@ export default function ContactForm() {
         <h2 className="text-2xl font-bold text-gray-800 mb-1 text-center">
           Na Kontaktoni
         </h2>
+
+        {error && (
+          <div className="text-center mb-4 text-red-600 font-semibold">
+            {error}
+          </div>
+        )}
+
+        {success && (
+          <div className="text-center mb-4 text-green-600 font-semibold">
+            {success}
+          </div>
+        )}
 
         {/* Name */}
         <div className="mb-3">
