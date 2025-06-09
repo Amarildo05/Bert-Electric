@@ -25,23 +25,27 @@ export default function ContactForm() {
     const nameParts = name.trim().split(" ");
     if (nameParts.length < 2) {
       setError("Ju lutem shkruani emrin dhe mbiemrin.");
+      setTimeout(() => setError(""), 5000);
       return false;
     }
 
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(email)) {
       setError("Ju lutem vendosni një email të vlefshëm.");
+      setTimeout(() => setError(""), 5000);
       return false;
     }
 
     const phonePattern = /^[0-9]{6,15}$/;
     if (!phonePattern.test(phone)) {
       setError("Vendosni numrin e telefonit në formatin e saktë.");
+      setTimeout(() => setError(""), 5000);
       return false;
     }
 
     if (message.trim().length === 0) {
       setError("Ju lutem shkruani mesazhin tuaj.");
+      setTimeout(() => setError(""), 5000);
       return false;
     }
 
@@ -69,7 +73,8 @@ export default function ContactForm() {
         throw new Error("Dicka shkoi gabim. Provoni përsëri më vonë.");
       }
 
-      setSuccess(`Faleminderit, ${formData.name}! Mesazhi juaj u pranua.`);
+      const firstName = formData.name.trim().split(" ")[0];
+      setSuccess(`Faleminderit, ${firstName}! Mesazhi juaj u dërgua.`);
       setFormData({ name: "", email: "", phone: "", message: "" });
 
       setTimeout(() => setSuccess(""), 5000);
