@@ -1,5 +1,11 @@
+import ProductsHero from "../components/products/ProductsHero";
+import BrandCards from "../components/products/BrandCards";
+
 export default function Products() {
   return (
-    <div>Produkte</div>
-  )
+    <>
+      <ProductsHero />
+      <BrandCards />
+    </>
+  );
 }
