@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 
-// src/components/ContactCTA.jsx
 export default function ContactCTA() {
   return (
     <section className="py-16 px-8 bg-gray-100">

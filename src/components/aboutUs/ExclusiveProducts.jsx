@@ -1,8 +1,4 @@
-const logos = [
-  "/Products/Products-logo/Dahua-logo.png",
-  "/Products/Products-logo/Ezviz-Logo.png",
-  "/Products/Products-logo/Hikvision-Logo.png",
-];
+import { logos } from "../../data/about/ExclusiveProductsData";
 
 export default function ExclusiveProducts() {
   const productLogoTemplate = (logo) => (
