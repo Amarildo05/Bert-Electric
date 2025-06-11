@@ -8,10 +8,12 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ServicesDetails from "./pages/ServicesDetails";
 import BackTop from "./components/BackTop";
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
