@@ -4,9 +4,9 @@ export default function BrandCards() {
   return (
     <section className="py-16 px-14 sm:px-6 bg-gray-100">
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {/* Brand Card – Dahua */}
+        {/* Card – Dahua */}
         <Link
-          to="/products/dahua"
+          to="/produktet/dahua"
           className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center transition transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50"
         >
           <img
@@ -23,9 +23,9 @@ export default function BrandCards() {
           </div>
         </Link>
 
-        {/* Brand Card – Ezviz */}
+        {/* Card – Ezviz */}
         <Link
-          to="/products/ezviz"
+          to="/produktet/ezviz"
           className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center transition transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50"
         >
           <img
@@ -42,9 +42,9 @@ export default function BrandCards() {
           </div>
         </Link>
 
-        {/* Brand Card – Hikvision */}
+        {/* Card – Hikvision */}
         <Link
-          to="/products/hikvision"
+          to="/produktet/hikvision"
           className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center transition transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50"
         >
           <img

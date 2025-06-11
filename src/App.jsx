@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import ServicesDetails from "./pages/ServicesDetails";
 import BackTop from "./components/BackTop";
 import ScrollToTop from "./components/ScrollToTop";
+import ProductsDetails from "./pages/ProductsDetails";
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/produktet" element={<Products />} />
         <Route path="/kontakt" element={<Contact />} />
         <Route path="/sherbimet/:slug" element={<ServicesDetails />} />
+        <Route path="/produktet/:brand" element={<ProductsDetails />} />
       </Routes>
       <Footer />
       <BackTop />
