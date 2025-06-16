@@ -1,6 +1,6 @@
 export default function ContactInfo() {
   return (
-    <div className="text-gray-700">
+    <div className="text-gray-700 slide-fade-in">
       <h2 className="text-center lg:text-start text-3xl font-bold text-blue-800 mb-8">
         Informacione Kontakti
       </h2>

@@ -7,7 +7,7 @@ export default function BrandCards() {
         {/* Card – Dahua */}
         <Link
           to="/produktet/dahua"
-          className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center transition transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50"
+          className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center transition transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50 pop-fade-in"
         >
           <img
             src="/Products/Products-logo/Dahua-logo.png"
@@ -26,7 +26,7 @@ export default function BrandCards() {
         {/* Card – Ezviz */}
         <Link
           to="/produktet/ezviz"
-          className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center transition transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50"
+          className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center transition transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50 pop-fade-in"
         >
           <img
             src="/Products/Products-logo/Ezviz-Logo.png"
@@ -45,7 +45,7 @@ export default function BrandCards() {
         {/* Card – Hikvision */}
         <Link
           to="/produktet/hikvision"
-          className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center transition transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50"
+          className="bg-white rounded-lg shadow-md p-8 flex flex-col items-center text-center transition transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50 pop-fade-in"
         >
           <img
             src="/Products/Products-logo/Hikvision-Logo.png"

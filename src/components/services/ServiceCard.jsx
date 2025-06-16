@@ -4,7 +4,7 @@ export default function ServiceCard({ title, description, icon, image, link }) {
   return (
     <Link
       to={link}
-      className="bg-gray-100 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 hover:-translate-y-1 flex flex-col lg:flex-row cursor-pointer"
+      className="bg-gray-100 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-transform duration-300 hover:-translate-y-1 flex flex-col lg:flex-row cursor-pointer pop-fade-in"
     >
       <div className="w-full lg:w-1/2 h-full lg:h-auto overflow-hidden">
         <img

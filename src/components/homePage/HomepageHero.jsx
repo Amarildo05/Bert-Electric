@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function HomepageHero() {
   return (
     <div className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-4">
-      <div className="flex items-center py-5 md:w-1/2 md:pb-10 md:pt-10 md:pr-4">
+      <div className="flex items-center py-5 md:w-1/2 md:pb-10 md:pt-10 md:pr-4 slide-fade-in">
         <div className="text-center md:text-left">
           <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
             BERT <span className="text-blue-800">ELECTRIC</span>
@@ -27,7 +27,7 @@ export default function HomepageHero() {
         </div>
       </div>
 
-      <div className="flex items-center py-5 md:w-2/3 md:pb-20 md:pt-10 md:pl-10">
+      <div className="flex items-center py-5 md:w-2/3 md:pb-20 md:pt-10 md:pl-10 pop-fade-in">
         <div className="relative w-full p-3 rounded md:p-8">
           <div className="rounded-lg bg-white text-black w-full">
             <img

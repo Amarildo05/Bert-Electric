@@ -9,7 +9,7 @@ export default function ServicesDetails() {
   return (
     <>
       {/* Header */}
-      <section className="relative py-18 text-center">
+      <section className="relative py-18 text-center slide-fade-in">
         <h1 className="text-5xl font-extrabold z-10 text-blue-800 drop-shadow-[0_1px_5px_rgba(0,0,0,0.25)] lg:-top-8">
           {serviceDetail.title}
         </h1>
@@ -19,10 +19,14 @@ export default function ServicesDetails() {
       </section>
 
       {/* Carousel */}
-      {serviceDetail.images && <PhotoCarousel images={serviceDetail.images} />}
+      <div className="pop-fade-in">
+        {serviceDetail.images && (
+          <PhotoCarousel images={serviceDetail.images} />
+        )}
+      </div>
 
       {/* Main Content */}
-      <section className="px-6 max-w-5xl mx-auto">
+      <section className="px-6 max-w-5xl mx-auto fade-up">
         <h2 className="text-2xl font-semibold text-blue-800 mb-4">
           Përshkrimi i Shërbimit
         </h2>

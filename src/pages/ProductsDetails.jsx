@@ -17,7 +17,7 @@ export default function ProductsDetails() {
   return (
     <section className="py-16 px-4 bg-gray-100">
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">
+        <h2 className="text-4xl font-bold text-center text-blue-900 mb-12 slide-fade-in">
           Produktet {brand.charAt(0).toUpperCase() + brand.slice(1)}
         </h2>
 
@@ -25,7 +25,7 @@ export default function ProductsDetails() {
           {products.map((product, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden flex flex-col sm:flex-row items-center gap-4 px-4 py-3"
+              className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-200 overflow-hidden flex flex-col sm:flex-row items-center gap-4 px-4 py-3 pop-fade-in"
             >
               <img
                 src={product.image}

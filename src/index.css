@@ -7,3 +7,91 @@ body {
   background-color: #e0e3e8;
   font-family: "Titillium Web", sans-serif;
 }
+
+/* Animations */
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes popFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-20 {
+  animation: fadeIn20 1.5s ease forwards;
+}
+
+@keyframes fadeIn20 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.fade-in-30 {
+  animation: fadeIn30 1.5s ease forwards;
+}
+
+@keyframes fadeIn30 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.fade-in-50 {
+  animation: fadeIn50 1.5s ease forwards;
+}
+
+@keyframes fadeIn50 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 1s ease-out forwards;
+}
+
+.slide-fade-in {
+  opacity: 0;
+  animation: slideFadeIn 1s ease-out forwards;
+}
+
+.pop-fade-in {
+  opacity: 0;
+  animation: popFadeIn 1s ease-out forwards;
+}
