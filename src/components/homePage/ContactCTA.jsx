@@ -18,7 +18,7 @@ export default function ContactCTA() {
             <a
               href="tel:0695660789"
               onClick={(e) => e.stopPropagation()}
-              className="inline-flex items-center gap-2 text-blue-800 font-semibold text-lg hover:text-blue-600 transition hover:scale-110"
+              className="inline-flex items-center gap-2 text-blue-800 font-semibold text-base sm:text-lg hover:text-blue-600 transition hover:scale-110"
             >
               <i className="pi pi-phone" />
               069 566 0789
@@ -30,7 +30,7 @@ export default function ContactCTA() {
               onClick={(e) => e.stopPropagation()}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-green-600 font-semibold text-lg hover:text-green-500 transition hover:scale-110"
+              className="inline-flex items-center gap-2 text-green-600 font-semibold text-base sm:text-lg hover:text-green-500 transition hover:scale-110"
             >
               <i className="pi pi-whatsapp" />
               Shkruaj në WhatsApp

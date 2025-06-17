@@ -10,7 +10,7 @@ export default function Footer() {
             <img
               src="/BertElectric-Logo.png"
               alt="Bert Electric Logo"
-              className="w-22 h-22 rounded-full"
+              className="w-18 h-18 sm:w-22 sm:h-22 rounded-full"
             />
           </Link>
         </div>
@@ -61,7 +61,7 @@ export default function Footer() {
       <hr className="border-gray-600 mt-5 mb-4 w-full" />
 
       {/* Copyright */}
-      <div className="text-center text-sm text-gray-400">
+      <div className="text-center text-xs sm:text-sm text-gray-400">
         © {new Date().getFullYear()} Bert Electric. All rights reserved.
       </div>
     </footer>

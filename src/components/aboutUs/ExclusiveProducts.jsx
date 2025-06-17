@@ -5,7 +5,7 @@ export default function ExclusiveProducts() {
     <img
       src={logo}
       alt="Brand Logo"
-      className=" w-32 lg:w-48 object-contain mx-4"
+      className="w-28 lg:w-48 object-contain mx-4"
       loading="lazy"
     />
   );
@@ -13,7 +13,7 @@ export default function ExclusiveProducts() {
   return (
     <section className="py-16 px-8 mb-16 text-center bg-gray-100">
       <h3 className="mb-8 text-base md:text-lg text-gray-500">
-        Ne bashkëpunim me markat më të mira në treg
+        Ne bashkëpunim me markat më të njohura në treg
       </h3>
       <div className="flex justify-center flex-wrap items-center gap-8">
         {logos.map((logo, i) => (

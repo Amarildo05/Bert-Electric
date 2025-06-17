@@ -19,7 +19,7 @@ export default function HomepageHero() {
           <div className="mt-5 md:mt-6">
             <Link
               to="/rreth-nesh"
-              className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-white transition duration-150 ease-in-out bg-blue-800 rounded-md hover:bg-blue-700 shadow hover:scale-106"
+              className="inline-flex items-center justify-center px-4 py-2 sm:px-8 sm:py-3 text-base font-medium text-white transition duration-150 ease-in-out bg-blue-800 rounded-md hover:bg-blue-700 shadow hover:scale-106"
             >
               Mëso më shumë
             </Link>
