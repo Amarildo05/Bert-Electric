@@ -13,10 +13,10 @@ export default function ContactCTA() {
         onClick={handleCardClick}
         className="cursor-pointer max-w-4xl mx-auto text-center bg-white rounded-xl shadow-md p-8 transition transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50"
       >
-        <h2 className="text-2xl font-bold text-gray-800">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-800">
           Keni nevojë për ndihmë apo informacion?
         </h2>
-        <p className="text-gray-500 mt-2">
+        <p className="text-gray-500 mt-2 text-sm sm:text-base">
           Jemi gjithmonë të gatshëm t’ju ndihmojmë. Mund të na telefononi ose të
           na shkruani në WhatsApp.
         </p>

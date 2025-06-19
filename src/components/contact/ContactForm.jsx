@@ -96,13 +96,13 @@ export default function ContactForm() {
         </h2>
 
         {error && (
-          <div className="text-center mb-4 text-red-600 font-semibold">
+          <div className="text-center mb-4 text-red-600 font-semibold text-sm sm:text-base">
             {error}
           </div>
         )}
 
         {success && (
-          <div className="text-center mb-4 text-green-600 font-semibold">
+          <div className="text-center mb-4 text-green-600 font-semibold text-sm sm:text-base">
             {success}
           </div>
         )}
