@@ -85,7 +85,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
+    <section className="py-12 px-6 lg:px-8 max-w-3xl mx-auto">
       <form
         onSubmit={handleSubmit}
         className="bg-gray-100 p-5 sm:p-6 rounded-lg shadow-md"
@@ -111,7 +111,7 @@ export default function ContactForm() {
         <div className="mb-3">
           <label
             htmlFor="name"
-            className="block font-medium text-gray-700 mb-1"
+            className="block font-medium text-gray-700 mb-1 ps-1 text-sm sm:text-base"
           >
             Emri/Mbiemri <span className="text-red-600">*</span>
           </label>
@@ -131,7 +131,7 @@ export default function ContactForm() {
         <div className="mb-3">
           <label
             htmlFor="email"
-            className="block font-medium text-gray-700 mb-1"
+            className="block font-medium text-gray-700 mb-1 ps-1 text-sm sm:text-base"
           >
             Email <span className="text-red-600">*</span>
           </label>
@@ -151,7 +151,7 @@ export default function ContactForm() {
         <div className="mb-3">
           <label
             htmlFor="phone"
-            className="block font-medium text-gray-700 mb-1"
+            className="block font-medium text-gray-700 mb-1 ps-1 text-sm sm:text-base"
           >
             Numri i telefonit <span className="text-red-600">*</span>
           </label>
@@ -170,7 +170,7 @@ export default function ContactForm() {
         <div className="mb-5">
           <label
             htmlFor="message"
-            className="block font-medium text-gray-700 mb-1"
+            className="block font-medium text-gray-700 mb-1 ps-1 text-sm sm:text-base"
           >
             Mesazhi juaj <span className="text-red-600">*</span>
           </label>

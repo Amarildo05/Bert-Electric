@@ -9,11 +9,11 @@ export default function ServicesDetails() {
   return (
     <>
       {/* Header */}
-      <section className="relative py-18 text-center slide-fade-in">
-        <h1 className="text-5xl font-extrabold z-10 text-blue-800 drop-shadow-[0_1px_5px_rgba(0,0,0,0.25)] lg:-top-8">
+      <section className="relative py-14 sm:py-18 text-center slide-fade-in">
+        <h1 className="text-4xl sm:text-5xl font-extrabold z-10 text-blue-800 drop-shadow-[0_1px_5px_rgba(0,0,0,0.25)] lg:-top-8">
           {serviceDetail.title}
         </h1>
-        <p className="mt-4 text-lg sm:text-xl z-10 text-gray-600 drop-shadow-[0_1px_4px_rgba(0,0,0,0.25)] lg:-top-8">
+        <p className="mt-4 px-2 sm:px-0 text-base sm:text-xl z-10 text-gray-600 drop-shadow-[0_1px_4px_rgba(0,0,0,0.25)] lg:-top-8">
           Shërbim i besueshëm dhe i personalizuar për çdo klient.
         </p>
       </section>
@@ -53,7 +53,7 @@ export default function ServicesDetails() {
         <div className="text-center my-10">
           <Link
             to="/kontakt"
-            className="inline-block px-6 py-3 text-white transition duration-150 ease-in-out bg-blue-800 rounded-md hover:bg-blue-700 shadow hover:scale-106"
+            className="inline-block px-4 py-2 sm:px-6 sm:py-3 text-white transition duration-150 ease-in-out bg-blue-800 rounded-md hover:bg-blue-700 shadow hover:scale-106"
           >
             Na Kontaktoni për më shumë
           </Link>

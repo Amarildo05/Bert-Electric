@@ -1,6 +1,6 @@
 export default function WhyChooseUs() {
   return (
-    <section className="max-w-4xl mx-auto mb-14 sm:mb-20">
+    <section className="max-w-4xl mx-auto py-10 sm:py-16">
       <h2 className="text-3xl font-semibold mb-6 text-center text-gray-800">
         Pse të na zgjidhni ne?
       </h2>

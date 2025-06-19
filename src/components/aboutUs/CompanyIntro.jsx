@@ -1,6 +1,6 @@
 export default function CompanyIntro() {
   return (
-    <section className="py-12 sm:py-16 px-6 sm:px-8 md:px-p[10%] lg:px-[20%] text-center md:text-left mb-20 leading-relaxed text-base sm:text-lg text-gray-500 bg-gray-100">
+    <section className="py-8 sm:py-12 px-6 sm:px-8 md:px-p[10%] lg:px-[20%] text-center md:text-left leading-relaxed text-base sm:text-lg text-gray-500 bg-gray-100">
       <div className="pop-fade-in">
         <p className="mb-4">
           Në Bert Electric, ofrojmë shërbime profesionale dhe të besueshme në

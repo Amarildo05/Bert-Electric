@@ -11,7 +11,7 @@ export default function ExclusiveProducts() {
   );
 
   return (
-    <section className="py-16 px-8 mb-16 text-center bg-gray-100">
+    <section className="py-14 sm:py-16 px-8 mb-16 text-center bg-gray-100">
       <h3 className="mb-8 text-base md:text-lg text-gray-500">
         Ne bashkëpunim me markat më të njohura në treg
       </h3>

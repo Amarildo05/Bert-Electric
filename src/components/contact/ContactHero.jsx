@@ -1,6 +1,6 @@
 export default function ContactHero() {
   return (
-    <section className="relative flex flex-col items-center justify-center text-center py-24 sm:py-35 overflow-hidden">
+    <section className="relative flex flex-col items-center justify-center text-center py-18 sm:py-31 overflow-hidden">
       {/* Background for small to medium screens */}
       <div
         className="absolute inset-0 z-0 fade-in-30 block xl:hidden"
@@ -23,11 +23,11 @@ export default function ContactHero() {
         }}
       />
 
-      <h1 className="fade-up relative text-5xl font-extrabold z-10 text-blue-800 drop-shadow-[0_1px_5px_rgba(0,0,0,0.25)] lg:-top-8">
+      <h1 className="fade-up relative text-4xl sm:text-5xl font-extrabold z-10 text-blue-800 drop-shadow-[0_1px_5px_rgba(0,0,0,0.25)] lg:-top-8">
         Na Kontaktoni
       </h1>
 
-      <p className="fade-up relative mt-4 max-w-xl text-lg lg:text-xl z-10 text-gray-600 drop-shadow-[0_1px_4px_rgba(0,0,0,0.25)] lg:-top-8">
+      <p className="fade-up relative mt-4 px-4 sm:px-0 max-w-xl text-base lg:text-xl z-10 text-gray-600 drop-shadow-[0_1px_4px_rgba(0,0,0,0.25)] lg:-top-8">
         Jemi këtu për t'ju ndihmuar. Na shkruani ose na telefononi!
       </p>
 

@@ -1,6 +1,6 @@
 export default function AboutUsHero() {
   return (
-    <section className="relative flex flex-col items-center justify-center text-center py-20 sm:py-32 overflow-hidden">
+    <section className="relative flex flex-col items-center justify-center text-center py-20 sm:py-28 overflow-hidden">
       <div
         className="absolute inset-0 z-0 opacity-50 fade-in-50"
         style={{

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function ContactCTA() {
   return (
-    <section className="py-16 px-8 bg-gray-100">
+    <section className="py-12 sm:py-16 px-8 bg-gray-100">
       <Link to="/kontakt">
         <div className="max-w-4xl mx-auto text-center bg-white rounded-xl shadow-md p-8 transition transform hover:-translate-y-1 hover:shadow-xl hover:bg-gray-50">
           <h2 className="text-2xl font-bold text-gray-800">

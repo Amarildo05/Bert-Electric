@@ -3,7 +3,7 @@ import { services } from "../../data/homepage/ServicesPreviewData";
 
 export default function ServicesPreview() {
   return (
-    <section className="bg-gray-100 py-16 px-8">
+    <section className="bg-gray-100 py-10 sm:py-16 px-8">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-gray-800 mb-10 pop-fade-in">
           Shërbimet

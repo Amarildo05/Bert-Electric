@@ -15,7 +15,7 @@ export default function ProductsDetails() {
   const products = productsMap[brand] || [];
 
   return (
-    <section className="py-16 px-4 bg-gray-100">
+    <section className="py-10 sm:py-16 px-6 sm:px-4 bg-gray-100">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-blue-900 mb-12 slide-fade-in">
           Produktet {brand.charAt(0).toUpperCase() + brand.slice(1)}

@@ -3,7 +3,7 @@ import { products } from "../../data/homepage/ProductHighlightsData";
 
 export default function ProductHighlights() {
   return (
-    <section className="py-16 px-8 mb-4">
+    <section className="py-10 sm:py-16 px-8 mb-4">
       <div className="max-w-6xl mx-auto text-center mb-10">
         <h2 className="text-3xl font-bold text-gray-800">Produktet Kryesore</h2>
         <p className="text-gray-500 mt-2">
@@ -18,7 +18,7 @@ export default function ProductHighlights() {
             key={index}
             className="block bg-gray-100 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:bg-gray-50"
           >
-            <div className="flex items-center justify-between px-16 sm:px-4 md:px-7 p-3">
+            <div className="flex items-center justify-between gap-8 sm:gap-0 px-16 sm:px-4 md:px-7 p-3">
               <img
                 src={item.logo}
                 alt={`${item.brand} Logo`}

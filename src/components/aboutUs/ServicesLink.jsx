@@ -7,7 +7,7 @@ export default function ServicesLink() {
         to="/sherbimet"
         className="inline-block mt-8 text-blue-800 hover:text-blue-600 transition hover:scale-110 font-semibold"
       >
-        Shihni të gjitha shërbimet tona këtu &rarr;
+        Shikoni të gjitha shërbimet tona këtu &rarr;
       </Link>
     </section>
   );
