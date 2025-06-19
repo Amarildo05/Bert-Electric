@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 export default function HomepageHero() {
   return (
-    <div className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto md:flex-row sm:px-6 p-4">
-      <div className="flex items-center py-5 md:w-1/2 md:pb-10 md:pt-10 md:pr-4 slide-fade-in">
-        <div className="text-center md:text-left">
+    <div className="relative flex flex-col items-center max-w-screen-xl px-4 mx-auto lg:flex-row sm:px-6 p-4">
+      <div className="flex items-center py-5 lg:w-1/2 lg:pb-10 lg:pt-10 lg:pr-4 slide-fade-in">
+        <div className="text-center lg:text-left">
           <h2 className="text-4xl font-extrabold leading-10 tracking-tight text-gray-800 sm:text-5xl sm:leading-none md:text-6xl">
             BERT <span className="text-blue-800">ELECTRIC</span>
           </h2>
