@@ -59,4 +59,10 @@ export const hikvisionProducts = [
     description: "Furnizues energjie për kamera me mbrojtje të integruar.",
     image: "/Products/test.png",
   },
+  {
+    name: "Power Supply për Kamera 2",
+    code: "PSU-12VDC-2A",
+    description: "Furnizues energjie për kamera me mbrojtje të integruar.",
+    image: "/Products/test.png",
+  },
 ];
