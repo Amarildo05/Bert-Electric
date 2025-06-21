@@ -14,7 +14,7 @@ export default function ProductHighlights() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-6 sm:mx-auto">
         {products.map((item, index) => (
           <Link
-            to="/produktet"
+            to={item.route}
             key={index}
             className="block bg-gray-100 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:bg-gray-50"
           >
