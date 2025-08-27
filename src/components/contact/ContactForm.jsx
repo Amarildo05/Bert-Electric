@@ -22,6 +22,7 @@ export default function ContactForm() {
   const validateForm = () => {
     const { name, email, phone, message } = formData;
 
+    // Name validation (first + last)
     const nameParts = name.trim().split(" ");
     if (nameParts.length < 2) {
       setError("Ju lutem shkruani emrin dhe mbiemrin.");
@@ -29,20 +30,22 @@ export default function ContactForm() {
       return false;
     }
 
+    // Email Or Phone must be valid
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-      setError("Ju lutem vendosni një email të vlefshëm.");
-      setTimeout(() => setError(""), 5000);
-      return false;
-    }
-
     const phonePattern = /^[0-9]{6,15}$/;
-    if (!phonePattern.test(phone)) {
-      setError("Vendosni numrin e telefonit në formatin e saktë.");
+
+    const isEmailValid = emailPattern.test(email);
+    const isPhoneValid = phonePattern.test(phone);
+
+    if (!isEmailValid && !isPhoneValid) {
+      setError(
+        "Ju lutem vendosni email-in ose numrin e telefonit në formatin e saktë."
+      );
       setTimeout(() => setError(""), 5000);
       return false;
     }
 
+    // Message validation
     if (message.trim().length === 0) {
       setError("Ju lutem shkruani mesazhin tuaj.");
       setTimeout(() => setError(""), 5000);
@@ -133,7 +136,7 @@ export default function ContactForm() {
             htmlFor="email"
             className="block font-medium text-gray-700 mb-1 ps-1 text-sm sm:text-base"
           >
-            Email <span className="text-red-600">*</span>
+            Email
           </label>
           <input
             id="email"
@@ -141,7 +144,6 @@ export default function ContactForm() {
             type="email"
             value={formData.email}
             onChange={handleChange}
-            required
             className="w-full border border-gray-300 rounded-md px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-700"
             placeholder="Shkruani email-in tuaj"
           />
@@ -153,7 +155,7 @@ export default function ContactForm() {
             htmlFor="phone"
             className="block font-medium text-gray-700 mb-1 ps-1 text-sm sm:text-base"
           >
-            Numri i telefonit <span className="text-red-600">*</span>
+            Numri i telefonit
           </label>
           <input
             id="phone"
