@@ -125,7 +125,7 @@ export default function ContactForm() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="w-full border border-gray-300 rounded-md px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-700"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm transition focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-blue-700"
             placeholder="Shkruani emrin tuaj"
           />
         </div>
@@ -144,7 +144,7 @@ export default function ContactForm() {
             type="email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full border border-gray-300 rounded-md px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-700"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm transition focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-blue-700"
             placeholder="Shkruani email-in tuaj"
           />
         </div>
@@ -163,7 +163,7 @@ export default function ContactForm() {
             type="tel"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full border border-gray-300 rounded-md px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-700"
+            className="w-full border border-gray-300 rounded-md px-3 py-2 text-sm transition focus:outline-none focus:ring-2 focus:ring-blue-700 focus:border-blue-700"
             placeholder="Numri i telefonit"
           />
         </div>
@@ -190,7 +190,7 @@ export default function ContactForm() {
 
         <button
           type="submit"
-          className="px-6 py-2 text-white bg-blue-800 hover:bg-blue-700 rounded-md shadow transition hover:scale-[1.02] text-sm font-semibold mx-auto block"
+          className="w-full sm:w-auto px-6 py-2 text-white bg-blue-800 hover:bg-blue-700 rounded-md shadow transition hover:scale-[1.02] text-sm font-semibold sm:mx-auto sm:block"
         >
           Dërgo Mesazhin
         </button>

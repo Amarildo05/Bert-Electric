@@ -24,11 +24,9 @@ export default function ProductHighlights() {
                 alt={`${item.brand} Logo`}
                 className="h-6 w-auto"
               />
-              <img
-                src="/Products/Exclusive-logo.png"
-                alt="Ekskluzive"
-                className="h-10 w-auto"
-              />
+              <span className="text-xs font-bold uppercase tracking-widest text-blue-800 border border-blue-800 rounded px-2 py-0.5">
+                Ekskluzive
+              </span>
             </div>
             <img
               src={item.image}
@@ -40,7 +38,7 @@ export default function ProductHighlights() {
                 {item.brand}
               </h3>
               <p className="text-sm text-gray-500 mt-1 mb-4">{item.subtitle}</p>
-              <span className="inline-block px-4 py-2 text-sm text-white bg-blue-800 rounded hover:bg-blue-700 transition hover:scale-106">
+              <span className="inline-block px-4 py-2 text-sm font-semibold text-white bg-blue-800 rounded-md shadow hover:bg-blue-700 transition hover:scale-106">
                 Shiko më shumë
               </span>
             </div>

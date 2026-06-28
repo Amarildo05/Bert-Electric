@@ -32,7 +32,7 @@ export default function ProductsDetails() {
                 src={product.image}
                 alt={product.name}
                 preview
-                imageClassName="w-full h-32 sm:w-44 md:w-64 object-contain rounded"
+                imageClassName="w-full h-32 sm:w-44 sm:h-36 md:w-56 object-contain rounded"
               />
               <div className="flex-1 text-center sm:text-left">
                 <h3 className="text-lg font-semibold text-gray-800">

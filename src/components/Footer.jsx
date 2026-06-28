@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col items-center text-center">
           <Link to="/" className="hover:scale-110 transition">
             <img
-              src="/BertElectric-Logo.png"
+              src="/BertElectric-Logo.svg"
               alt="Bert Electric Logo"
               className="w-18 h-18 sm:w-22 sm:h-22 rounded-full"
             />

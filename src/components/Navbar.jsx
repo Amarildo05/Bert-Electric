@@ -23,7 +23,7 @@ export default function Navbar() {
           onClick={() => navigate("/")}
         >
           <img
-            src="/BertElectric-Logo.png"
+            src="/BertElectric-Logo.svg"
             alt="Bert Electric Logo"
             className="w-17 h-16 rounded-full"
           />
@@ -75,9 +75,7 @@ export default function Navbar() {
                 }`}
               >
                 <i
-                  className={`pi ${
-                    item.icon
-                  } text-lg transition-colors duration-300 ${
+                  className={`pi ${item.icon} text-lg transition-colors duration-300 ${
                     isActive
                       ? "text-blue-900"
                       : "text-white group-hover:text-[#14128f]"
@@ -101,7 +99,7 @@ export default function Navbar() {
                 key={item.path}
                 onClick={() => {
                   navigate(item.path);
-                  setMenuOpen(false); // Close Menu after navigating to another page
+                  setMenuOpen(false);
                 }}
                 className={`group cursor-pointer w-2/3 px-4 py-2 text-center flex items-center justify-center gap-2 rounded-lg transition-all duration-300 ${
                   isActive
@@ -110,9 +108,7 @@ export default function Navbar() {
                 }`}
               >
                 <i
-                  className={`pi ${
-                    item.icon
-                  } text-lg transition-colors duration-300 ${
+                  className={`pi ${item.icon} text-lg transition-colors duration-300 ${
                     isActive
                       ? "text-blue-900"
                       : "text-white group-hover:text-[#14128f]"
